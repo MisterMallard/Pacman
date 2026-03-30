@@ -21,5 +21,9 @@ public class Arrow : MonoBehaviour
 			Destroy(collision.gameObject);
 			Destroy(gameObject); 
 		}
+		if (collision.gameObject.CompareTag("Wall"))
+		{
+			Destroy(gameObject); 
+		}
 	}
 }

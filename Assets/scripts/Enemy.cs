@@ -1,10 +1,12 @@
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 public class Enemy : MonoBehaviour
 {
     [SerializeField] private Transform target;
     NavMeshAgent agent;
+    public GameManager gameManager;
     void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -22,5 +24,12 @@ public class Enemy : MonoBehaviour
         {
             agent.SetDestination(target.position);
         }
-    
+
+	private void OnCollisionEnter2D(Collision2D collision)
+	{
+		if (collision.gameObject.CompareTag("Player"))
+		{
+			SceneManager.LoadScene("GameOver");
+		}
+	}
 }
