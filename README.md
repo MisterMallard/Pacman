@@ -10,4 +10,9 @@
 
 ## Verspreid over de kaart vind je gadgets die je via de tijdmachine hebt gekregen. Je kunt ze allemaal inzetten en elk heeft een andere functie.
 
+## 14:29 7-4-2026 
+
+dus dit is hoe calvin zijn game der uit ziet er is heel cool en kawaii we zitten nu de muuren textures te maken en grond textures.
+(*/ω＼*)
+
 <img width="1280" height="720" alt="obraz" src="photos/sigh.png"/>
