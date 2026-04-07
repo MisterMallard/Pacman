@@ -9,3 +9,5 @@
 # Specials 
 
 ## Verspreid over de kaart vind je gadgets die je via de tijdmachine hebt gekregen. Je kunt ze allemaal inzetten en elk heeft een andere functie.
+
+<img width="1280" height="720" alt="obraz" src="photos/sigh.png"/>
