@@ -6,12 +6,13 @@ public class ArrowShoot : MonoBehaviour
 	public Transform shootPoint;
 	public float arrowSpeed = 12f;
 	public bool pickedUp = false;
+	public GameObject currentBow;
 
 	public int bowDurability = 0;     
 	public int maxBowDurability = 3;  
 	void Update()
 	{
-		if (Input.GetKeyDown(KeyCode.F) && pickedUp)
+		if (pickedUp && Input.GetKeyDown(KeyCode.F))
 		{
 			Shoot();
 
@@ -19,7 +20,10 @@ public class ArrowShoot : MonoBehaviour
 
 			if (bowDurability >= maxBowDurability)
 			{
-				Destroy(gameObject);
+				if (currentBow != null)
+				{
+					Destroy(currentBow);
+				}
 				pickedUp = false;
 			}
 		}

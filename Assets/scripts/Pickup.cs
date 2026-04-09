@@ -52,6 +52,7 @@ public class Pickup : MonoBehaviour
 		else if (grabCheck.collider.CompareTag("Bow") && grabCheck.collider.transform.parent != boxHolder)
 		{
 			GrabObject(grabCheck);
+			arrowShoot.pickedUp = true;
 
 			if (arrowShoot != null)
 			{
