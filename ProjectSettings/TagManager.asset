@@ -10,6 +10,7 @@ TagManager:
   - Bow
   - arrow
   - Wall
+  - CoinText
   layers:
   - Default
   - TransparentFX
